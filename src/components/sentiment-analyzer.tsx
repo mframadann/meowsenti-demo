@@ -71,7 +71,7 @@ export default function SentimentAnalyzer() {
     const reviews = data.text
       .split('.')
       .filter((review) => review.trim() !== '')
-      .map((review) => ({ reviewr: review.trim() }));
+      .map((review) => ({ review: review.trim() }));
 
     const requestBody = {
       reviews: reviews,
